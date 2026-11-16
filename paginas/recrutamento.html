@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Irish+Grover&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Irish+Grover&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../imagens/skull-crossbones-solid-full.svg">
+    <link rel="stylesheet" href="../folha_de_estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <a href="../index.html">
+            <img src="../imagens/oneLogo.png" height="75" alt="Logo de One Piece">
+            </a>
+            <h1>Monte sua própria Tripulação</h1>
+            <div class="paragrafo">
+             <p>Feito por Gustavo Rocha.</p>
+            </div >     
+        </div>
+            <ul class="menu-principal">
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <span class="sublista-titulo">O Mundo de One Piece</span>
+                    <ul class="sublista">
+                        <li><a href="../paginas/mugiwaras.html">Os Mugiwaras</a></li>
+                        <li><a href="../paginas/akuma.html">Akuma no Mi</a></li>
+                        <li><a href="../paginas/sagas.html">Sagas e Arcos</a></li>
+                        <li><a href="../paginas/recrutamento.html" class="active">Recrutamento</a></li>
+                    </ul>
+                </li>
+                <li><a href="../paginas/ct.html">Contato</a></li>
+            </ul>
+    </header>
+    <main>
+        <button id="botao-tema">
+            <span id="icone-tema">🌙</span></button>
+      <section id="recrutamento">
+        <h2>Cadastrar Novo Pirata</h2>
+        <form id="form-pirata">
+            <!--criando o formulario-->
+            <div style="margin-bottom: 10px;width: 100%;text-align: center;">
+                <input type="text" id="nomePirata" placeholder="Nome do pirata..." required style="padding:  9px;border-radius: 15px;">
+                <!--criando um input tipo texto para o nome e ja deixando pra required,afinal e obrigatorio o nome-->
+            </div>
+            <div style="margin-bottom: 10px;width: 100%;text-align: center;">
+                <select id="cargo" style="border-radius: 12px;">
+                    <!--adicionamos o select para selecionar o cargo que o usuario deseja-->
+                    <option value="Capitão">Capitão</option>
+                        <option value="Espadachim">Espadachim</option> 
+                        <option value="Navegador(a)">Navegador(a)</option>
+                        <option value="Cozinheiro(a)">Cozinheiro(a)</option>
+                        <option value="Atirador(a)">Atirador(a)</option>
+                        <option value="Arqueólogo(a)">Arqueólogo(a)</option>
+                </select>
+            </div>
+            <!--apos isso criamos um outro input texto,para a fruta desejada,é opcional adicionar-->
+            <div style="margin-bottom: 10px; width: 100%; text-align: center;">
+                <input type="text" id="akumaPirata" placeholder="Akuma no Mi (opcional)..." style="padding: 8px;border-radius: 15px;">
+            </div>
+            <!--por fim,temos um botao tipo submit para enviar os dados que foram inseridos-->
+            <button type="submit" style="padding: 10px 20px;background-color: #f1c40f;border: none;font-weight: bold;cursor: pointer;border-radius: 15px; font-family: Source Code Pro">Recrutar para o Bando</button>
+        </form>
+        <!--aqui vamos mostrar na tela a tripulação atual e ,depois dos dados inseridos,com o novo membro-->
+        <h3 style="margin-top: 30px;">Tripulação Atual:</h3>
+        <ul id="listaTripulacao"></ul> <!--deixamos essa <ul> vazia porque vamos injetar ela dinamicamente com js com o innerHtml-->
+      </section>
+    </main>
+
+    <footer>
+        <p>&copy 2026 Gustavo Marques Rocha</p>
+    </footer>
+ <script src="../paginas/one.js"></script>
+</body>
+</html>

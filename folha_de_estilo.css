@@ -1,0 +1,158 @@
+body {
+    background-color: #1a242f;
+    color: #ffffff; 
+    font-family: sans-serif;
+}
+
+main {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2c3e50;
+}
+
+h1, h2, h3 {
+    color: #f1c40f;
+    font-family: "Irish Grover", system-ui;
+    font-weight: 350;
+}
+
+p {
+    text-align: justify; 
+    font-family: "Source Code Pro", monospace;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    padding: 15px;
+    border-bottom: 2px solid #f1c40f; 
+}
+
+.menu-principal {
+    list-style: none;
+    background-color: #000000;
+    padding: 10px;
+}
+
+.menu-principal > li {
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+}
+
+.menu-principal a, .sublista-titulo {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.menu-principal a.active {
+    color: #f1c40f;
+}
+
+.sublista {
+    display: none; 
+    position: absolute;
+    background-color: #222222;
+    list-style: none;
+    width: 150px;
+    padding: 5px;
+    text-align: left;
+}
+
+.sublista li {
+    padding: 5px 0;
+}
+
+.menu-principal > li:hover .sublista {
+    display: block; 
+}
+
+img {
+    border: 2px solid #ffffff;
+    margin: 10px 0;
+}
+
+ul, ol, dl {
+    margin-left: 20px;
+    font-family: "Source Code Pro", monospace;
+}
+
+dt {
+    font-weight: bold;
+    color: #ebbc00;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center !important;
+    margin: 0 auto;
+}
+
+body.modo-claro {
+    background-color: #f4f6f9;
+    color: #000000;
+}
+body.modo-claro h2,
+body.modo-claro h3{
+    color: #967904;
+}
+
+body.modo-claro main {
+    background-color: #dbd5d5;
+    box-shadow:  0 0 10px rgba(0,0,0,0.1);
+}
+body.modo-claro .paragrafo{
+ color: #ffffff;
+}
+
+#botao-tema {
+    padding: 8px 12px;
+    background-color: #0f1a25;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#form-pirata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form-pirata input,
+#form-pirata select{
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#recrutamento h2,
+#recrutamento h3 {
+text-align: center;
+}
+#listaTripulacao {
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+}

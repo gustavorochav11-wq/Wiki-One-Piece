@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Irish+Grover&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Irish+Grover&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../wikiOnePiece/imagens/house-regular-full.svg">
+    <link rel="stylesheet" href="../wikiOnePiece/folha_de_estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <a href="../wikiOnePiece/index.html"> <!--a imagem da logo e clicavel e sempre leva para a pagina inicial,a home-->
+            <img src="../wikiOnePiece/imagens/oneLogo.png" height="75" alt="Logo de One Piece">
+            </a>
+            <h1>Um dos melhores animes já feitos (minha opinião rs)</h1>
+            <div class="paragrafo"> <!--tive que criar uma div exclusiva para esse paragrafo por conta da mudança de temas,ou seja,pra apenas esse parágrafo continuar em branco quando o tema mudar e os outros não-->
+             <p>Feito por Gustavo Rocha.</p>
+            </div >
+        </div>
+            <ul class="menu-principal"> <!--O menu em si-->
+                <li><a href="../wikiOnePiece/index.html" class="active">Home</a></li> <!--marcamos em active o home porque é a pagina que estamos atualmente-->
+                <li> <!--a outra seção,no caso "o mundo de one piece"-->
+                    <span class="sublista-titulo">O Mundo de One Piece</span>
+                    <ul class="sublista"> <!--o submenu com as outras paginas logo abaixo-->
+                        <li><a href="../wikiOnePiece/paginas/mugiwaras.html">Os Mugiwaras</a></li>
+                        <li><a href="../wikiOnePiece/paginas/akuma.html">Akuma no Mi</a></li>
+                        <li><a href="../wikiOnePiece/paginas/sagas.html">Sagas e Arcos</a></li>
+                        <li><a href="../wikiOnePiece/paginas/recrutamento.html">Recrutamento</a></li>
+                    </ul>
+                </li>
+                <!--a ultima seção,a de contato-->
+                <li><a href="../wikiOnePiece/paginas/ct.html">Contato</a></li>
+            </ul>
+    </header>
+    <main>
+        <button id="botao-tema"> <!--a criacao de um botao que muda o tema da pagina,ou modo claro ou escuro-->
+            <span id="icone-tema">🌙</span></button>
+        <section id="introducao">
+            <h2>A Era dos Piratas</h2>
+            <p>One Piece é uma história sobre a busca pelo tesouro supremo deixado pelo Rei dos Piratas, Gol D. Roger. O jovem <strong><i>Monkey D. Luffy</i></strong> ganha o poder de se esticar como uma borracha após comer uma <strong><i>Akuma no Mi</i></strong> (fruta do Diabo) e decide recrutar seu próprio bando para alcançar o topo do mundo,sendo o <strong>Rei dos piratas</strong>.</p>
+            <div class="banner-container">
+                <img src="../wikiOnePiece/imagens/one-piece_capa.jpg" alt="Luffy e os Mugiwaras" height="190" class="banner">
+            </div>
+        </section>
+            <h3>Dê uma olhada na página</h3> <!--links das paginas-->
+            <p>Descubra mais sobre esse anime maravilhoso nos links abaixo!!</p>
+            <ul>
+                <li>A <a href="../wikiOnePiece/paginas/mugiwaras.html">Tripulação do Chapéu de Palha</a>.</li>
+                <li>Como funcionam as <a href="../wikiOnePiece/paginas/akuma.html">Frutas do Diabo</a>.</li>
+                <li>Ordem das <a href="../paginas/sagas.html">Grandes Sagas</a> da história.</li>
+                <li>Entre para a tripulação (<a href="../wikiOnePiece/paginas/recrutamento.html">Recrutamento</a>)</li>
+            </ul>
+        <hr>
+
+        <section id="curiosidades">
+            <h3>Curiosidades :)</h3>
+            <p>Criado por <a target="_blank" href="https://www.google.com/search?q=eiichiro+oda+one+piece&sca_esv=cd56e7bb8d58966a&rlz=1C1DVJR_pt-BRBR833BR833&sxsrf=ANbL-n7jh3jAmT3E_zbvhUjyfwZvpwYtJg%3A1779083002731&ei=-qYKavmwLMbR1sQP5NG92Qw&biw=1366&bih=607&oq=eiioda+one+piece&gs_lp=Egxnd3Mtd2l6LXNlcnAiEGVpaW9kYSBvbmUgcGllY2UqAggAMggQABgHGB4YEzIIEAAYBxgeGBMyChAAGAcYHhgTGAoyCBAAGAcYHhgTMggQABgHGB4YEzIIEAAYBxgeGBMyCBAAGAcYHhgTMggQABgHGB4YEzIIEAAYBxgeGBMyChAAGAcYHhgTGApIzhBQxARY4gZwAXgBkAEAmAGoAaABzwOqAQMwLjO4AQHIAQD4AQGYAgOgAtUCwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAg4QABjkAhjWBBiwA9gBAcICEBAuGEcY1gQYyAMYsAPYAQHCAhMQLhhDGIAEGIoFGMgDGLAD2AEBwgITEC4YgAQYigUYQxjIAxiwA9gBAcICBhAAGAcYHsICCBAAGAcYHhgKmAMAiAYBkAYTugYGCAEQARgJkgcDMS4yoAfLGLIHAzAuMrgHvgLCBwUzLTIuMcgHJ4AIAQ&sclient=gws-wiz-serp">Eiichiro Oda</a>, One Piece começou a ser publicado em 1997 e se tornou o mangá mais vendido da história do Japão, arrastando milhões de fãs pelo mundo todo com seus mistérios e construções de mundo impecáveis.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy 2026 Gustavo Marques Rocha</p>
+    </footer>
+ <script src="../wikiOnePiece/paginas/one.js"></script>
+</body>
+</html>
